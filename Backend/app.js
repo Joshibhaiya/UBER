@@ -24,9 +24,10 @@ app.get("/", (req, res) => {
 })
 
 const userRoutes = require ("./routes/user.routes.js")
+const captainRoutes = require ("./routes/captain.routes.js")
 
 
 
 app.use('/users',userRoutes)
-
+app.use('/captains',captainRoutes)
 module.exports = app;
